@@ -1,16 +1,41 @@
+/* Style for the navigation bar */
+nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    text-align: right; 
+}
+
+nav ul li {
+    display: inline; 
+    margin-right: 20px; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #00231C; 
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #96BAA0;
+}
+
 /* General Body Styling */
 body {
     font-family: Calibri, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F7F7F7; /* Light background color */
-    color: #00231C; /* Font color for body text */
+    background-color: #F7F7F7; 
+    color: #00231C; 
 }
 
 /* Hero Section */
 header {
     text-align: center;
-    background-color: #014038; /* Dark teal for the header */
+    background-color: #014038; 
     color: white;
     padding: 50px 0;
 }
@@ -43,7 +68,7 @@ main {
 }
 
 section {
-    background-color: #BDD4DA; /* Light blue for sections */
+    background-color: #BDD4DA; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -53,7 +78,7 @@ section {
 section img {
     width: 100%;
     height: auto;
-    border-bottom: 2px solid #96BAA0; /* Light teal border */
+    border-bottom: 2px solid #96BAA0; 
 }
 
 section p {
@@ -71,28 +96,54 @@ section h2 {
 }
 
 section:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
-/* Footer */
+.custom {
+    display: flex;
+    justify-content: center;   
+    gap: 20px;                 
+    flex-wrap: wrap;           
+}
+
+.custom section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;           
+}
+
+.custom section img {
+    max-width: 100%;           
+    height: auto;
+    margin: 10px;           
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;   
+    gap: 20px;                 
+    flex-wrap: wrap;           
+}
+
+.gallery section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;           
+}
+
+.gallery section img {
+    max-width: 100%;           
+    height: auto;
+    margin: 10px;           
+}
+
 footer {
-    background-color: #F0C06D; /* Yellow for footer */
+    background-color: #F0C06D;
     padding: 20px;
     text-align: center;
     color: #00231C;
-}
-
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr; /* Stack sections vertically */
-    }
-    
-    header h1 {
-        font-size: 20px;
-    }
-    
-    header p {
-        font-size: 14px;
-    }
 }
