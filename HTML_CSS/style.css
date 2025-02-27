@@ -1,0 +1,98 @@
+/* General Body Styling */
+body {
+    font-family: Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7; /* Light background color */
+    color: #00231C; /* Font color for body text */
+}
+
+/* Hero Section */
+header {
+    text-align: center;
+    background-color: #014038; /* Dark teal for the header */
+    color: white;
+    padding: 50px 0;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 25px; /* Title typography */
+    margin: 20px 0;
+}
+
+header p {
+    font-family: Comfortaa, sans-serif;
+    font-size: 15px; /* Subtitle typography */
+    margin: 0;
+}
+
+/* Main Content */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: #BDD4DA; /* Light blue for sections */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #96BAA0; /* Light teal border */
+}
+
+section p {
+    font-family: Calibri, sans-serif;
+    font-size: 16px; /* Body typography */
+    padding: 15px;
+    color: #00231C; /* Font color for body text */
+}
+
+section h2 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 11px; /* Captions typography */
+    margin-bottom: 10px;
+}
+
+section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #F0C06D; /* Yellow for footer */
+    padding: 20px;
+    text-align: center;
+    color: #00231C;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Stack sections vertically */
+    }
+    
+    header h1 {
+        font-size: 20px;
+    }
+    
+    header p {
+        font-size: 14px;
+    }
+}
