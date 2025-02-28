@@ -33,5 +33,51 @@
         <p>- Mr. Aloe?</p>
     </section>
 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us | Plant Shop</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+    <!-- Contact Us Form Section -->
+    <section id="contact-us" style="text-align: center; margin-top: 50px;">
+        <h2>Contact Us</h2>
+        <form id="contact-form" onsubmit="return validateContactForm()">
+        <div>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Success Message -->
+    <div id="form-submitted" style="display:none; color: green;">
+        <p>Thank you for reaching out! Your message has been submitted.</p>
+    </div>
+
+    <!-- Error Message -->
+    <div id="form-error" style="display:none; color: red;">
+        <p>Please fill out all fields correctly.</p>
+    </div>
+
+    <!-- Form Success Message -->
+    <div id="form-success" style="display:none;">
+        <p>Your form was successfully submitted!</p>
+    </div>
+</section>
+
+
 </body>
 </html>

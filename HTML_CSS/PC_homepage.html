@@ -20,28 +20,52 @@
 
     <!-- Hero Section -->
     <header>
-        <img src="images/Client1_LogoPalette2_96BAA0.png" alt="Wow pretty dirt.">
-        <h1>Welcome to Bloom Valley Nursery. </h1>
-        <p>Your go-to destination for your beautiful local plants.</p>
+        <div class="hero-background">
+            <img src="images/Client1_LogoPalette2_96BAA0.png" alt="Wow pretty dirt.">
+            <div class="hero-text">
+                <h1>Welcome to Bloom Valley Nursery.</h1>
+                <p>Your go-to destination for your beautiful local plants.</p>
+                <a href="PC_gallerypage.html" class="cta-button">Browse our plants</a>
+            </div>
+        </div>
     </header>
 
     <!-- Main Content -->
     <main>
-        <section>
-            <img src="images/Client1_AloePlant.png" alt="Aloe">
-            <p>Aloe plant for sale.</p>
-        </section>
+        <div class="plant-grid">
+            <section>
+                <img src="images/Client1_AloePlant.png" alt="Aloe">
+                <p>Aloe plant for sale.</p>
+            </section>
 
-        <section>
-            <img src="images/Client1_AppleTree.png" alt="Apple">
-            <p>Apple tree sapling for sale.</p>
-        </section>
+            <section>
+                <img src="images/Client1_AppleTree.png" alt="Apple">
+                <p>Apple tree sapling for sale.</p>
+            </section>
 
-        <section>
-            <img src="images/Client1_BirchTree.png" alt="Birch">
-            <p>Birch tree sapling for sale.</p>
-        </section>
+            <section>
+                <img src="images/Client1_BirchTree.png" alt="Birch">
+                <p>Birch tree sapling for sale.</p>
+            </section>
+        </div>
     </main>
 
+    <!-- Footer -->
+    <footer>
+        <p>Contact us at: <a href="mailto:info@bloomvalleynursery.com">info@bloomvalleynursery.com</a></p>
+        <p>&copy; 2025 Bloom Valley Nursery. All rights reserved.</p>
+        
+        <!-- Subscribe Section -->
+        <div class="subscribe">
+            <h3>Subscribe to our newsletter</h3>
+            <form id="subscribe-form" onsubmit="return validateEmail()">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+            <p id="email-error" style="color: red; display: none;">Please enter a valid email address.</p>
+        </div>
+    </footer>
+
+    <script src="functions.js"></script>
 </body>
 </html>

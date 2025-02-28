@@ -18,20 +18,36 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <header>
-        <img src="images/Client1_WateringCan.png" alt="Intro Photo">
-        <h1>Our collections.</h1>
-    </header>
+<!-- Gallery Section -->
+<main class="gallery">
+    <section>
+        <img src="images/Client1_SpiderPlant.png" alt="Spider Plant.">
+        <button class="add-to-cart" onclick="addToCart('Spider Plant')">Add to Cart</button>
+    </section>
+    <section>
+        <img src="images/Client1_MapleTree.png" alt="Maple.">
+        <button class="add-to-cart" onclick="addToCart('Maple Tree')">Add to Cart</button>
+    </section>
+    <section>
+        <img src="images/Client1_StringofPearls.png" alt="Pearls.">
+        <button class="add-to-cart" onclick="addToCart('String of Pearls')">Add to Cart</button>
+    </section>
+</main>
 
-    <!-- Gallery Section -->
-    <main class="gallery">
-        <section>
-            <img src="images/Client1_SpiderPlant.png" alt="Spider Plant.">
-            <img src="images/Client1_MapleTree.png" alt="Maple.">
-            <img src="images/Client1_StringofPearls.png" alt="Pearls.">
-        </section>
-    </main>
+<!-- Cart Popup -->
+<div id="cart-popup" class="cart-popup">
+    <div class="popup-content">
+        <span id="close-popup" class="close-popup">&times;</span>
+        <h2>Items in Cart</h2>
+        <ul id="cart-items-list"></ul>
+        <button onclick="viewCart()">View Cart</button>
+        <button onclick="processOrder()">Process Order</button>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<script src="functions.js"></script>
 
 </body>
 </html>
